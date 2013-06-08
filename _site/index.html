@@ -1,0 +1,576 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <title>Geometry Zen • Looking at the multiverse from a Geometric Algebra perspective</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" edit="David Geo Holmes">
+  <meta name="copyright" content>
+  <meta name="description" content>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600">
+  <link rel="stylesheet" href="/css/app.min.css" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/app.min.js"></script>
+</head>
+
+<body>
+  <header>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+          <i class="icon-cog"></i>
+        </a>
+        <a class="brand" href="/">
+          <span class="brandname">Geometry Zen <sup class="version ng-binding">Hydrogen</sup></span>
+        </a>
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <div id="view" ng-view="">
+  <div id="home-view" class="ng-scope">
+  <div class="subnavbar">
+    <div class="subnavbar-inner">
+      <div class="container">
+        <a class="btn-subnavbar collapsed" data-toggle="collapse" data-target=".subnav-collapse">
+          <i class="icon-reorder"></i>
+        </a>
+        <div class="subnav-collapse collapse">
+          <ul class="mainnav">
+            <li class="active">
+              <a href="http://www.geometryzen.org">
+                <i class="icon-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-eye-open"></i>
+                <span>Learn</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <!--li><a href="http://www.youtube.com/user/geometryzen">Watch</a></li-->
+                <!-- TODO: Use a custom domain name for Tutorial -->
+                <li><a href="http://david-geo-holmes.github.io/geometry-zen/" target="_blank">Tutorial</a></li>
+                <!--li><a href="faq">FAQ</a></li-->
+              </ul>
+            </li>
+            <!--
+            <li class="dropdown">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-book"></i>
+                <span>Develop</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="http://docs.geometryzen.org/tutorial">Tutorial</a></li>
+                <li><a href="http://docs.geometryzen.org/guide/">Developer Guide</a></li>
+                <li><a href="http://docs.geometryzen.org/api/">API Reference</a></li>
+                <li><a href="http://docs.geometryzen.org/misc/contribute">Contribute</a></li>
+                <li><a href="http://code.geometryzen.org/">Download</a></li>
+              </ul>
+            </li>
+            -->
+            <li class="dropdown">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="icon-external-link"></i>
+                <span>Discuss</span>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- li><a href="http://groups.google.com/group/geometryzen">Mailing List</a></li -->
+                <!-- li><a href="http://webchat.freenode.net/?channels=geometryzen&amp;uio=d4">Chat Room</a></li -->
+                <!--
+                <li class="divider"></li>
+                <li><a href="https://twitter.com/#!/geometryzen">Twitter</a></li>
+                <li><a href="https://plus.google.com/110323587230527980117">Google+</a></li>
+                <li class="divider"></li>
+                -->
+                <li class="dropdown-submenu">
+                  <a tabindex="-1" href="#">GitHub</a>
+                  <ul class="dropdown-menu">
+                    <!-- What does tabindex="-1" do on each of these list items-->
+                    <li><a href="https://github.com/david-geo-holmes/geometry-zen">Repository</a></li>
+                    <li><a href="https://github.com/david-geo-holmes/geometry-zen/issues">Issue Tracker</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- /.subnav-collapse -->
+      </div> <!-- /container -->
+    </div> <!-- /subnavbar-inner -->
+  </div> <!-- /subnavbar -->
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget">
+          <div class="widget-header">
+            <i class="icon-cogs"></i>
+            <h3>Geometry Zen</h3>
+          </div>
+          <div class="widget-content">
+            <div class="text-center">
+              <h1>
+                <large>Geometry Zen</large>
+              </h1>
+              <h1>
+                <small><em>Looking at the multiverse from a Geometric Algebra perspective</em></small>
+              </h1>
+              <br>
+              <p><em>Geometry Zen</em> is an online tool providing <em>Hands-on Learning</em> of <em>Geometric Algebra and Geometric Calculus</em> to students and researchers in <em>Physics, Engineering, and Computer Graphics</em> using <em>Python programming</em> and <em>WebGL 3D Visualization</em>. It is the goal of this tool to make Geometric Algebra familiar to young science students and academia so that Geometric Algebra becomes the <em>standard</em> <em>Unified Mathematical Language for Physics and Engineering in the 21st Century</em>.</p>
+              <br>
+            </div>
+            <div class="text-right">
+              <blockquote>
+                <p class="muted">...for geometry, you know, is the gate of science,<br>and the gate is so low and small<br>that one can only enter it as a little child.</p>
+                <small>William K. Clifford <cite title="Source Title"></cite></small>
+              </blockquote>
+            </div>
+          </div> <!-- div.widget-content -->
+        </div> <!-- div.widget -->
+      </div> <!-- div.span12 -->
+    </div>  <!-- div.row-fluid -->
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="widget">
+          <div class="widget-header">
+            <i class="icon-thumbs-up"></i>
+            <h3>Features and Benefits</h3>
+          </div>
+          <div class="widget-content">
+            <div class="accordion" id="fabAccordion">
+              <!-- Web Browser Platform -->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse0">
+                    Web Browser Platform
+                  </a>
+                </div>
+                <div id="fabCollapse0" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Nothing to install. Just use a WebGL compliant browser such as Chrome or Firefox.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Optimized for Mobile -->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse1">
+                    Optimized for Mobile
+                  </a>
+                </div>
+                <div id="fabCollapse1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Designed to be easily used on mobile tablet devices.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Modeling Workbench -->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse2">
+                    Modeling Workbench
+                  </a>
+                </div>
+                <div id="fabCollapse2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Juxtaposes an analytical programming editor with a 3D geometry view reinforcing the learning of the mathematical notation as well as the geometric interpretation.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Python Language -->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse3">
+                    Python Language
+                  </a>
+                </div>
+                <div id="fabCollapse3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Mathematical binary operators are natural to use. Easy to learn. Widely used in academia.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- WebGL rendering -->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse4">
+                    WebGL 3D rendering
+                  </a>
+                </div>
+                <div id="fabCollapse4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Fast GPU-based rendering provides smooth animation of simulations.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Geometric Algebra-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse5">
+                    Geometric Algebra(s)
+                  </a>
+                </div>
+                <div id="fabCollapse5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Support for 2D and 3D Euclidean (Now), Spacetime and Conformal algebras (Coming soon).</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Dimensional Analysis-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse6">
+                    Dimensional Analysis
+                  </a>
+                </div>
+                <div id="fabCollapse6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Automatic verification of the correctness of physical expressions (Coming soon).</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Units of Measure-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse7">
+                    Units of Measure
+                  </a>
+                </div>
+                <div id="fabCollapse7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Permits algebraic manipulations, even if the units differ, with automatic conversion (Coming soon).</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Coordinate Systems-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse8">
+                    Coordinate Systems
+                  </a>
+                </div>
+                <div id="fabCollapse8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Enter initial configuration in a coordinate system that reflects the symmetry of the system.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Tutorials-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse9">
+                    Tutorials
+                  </a>
+                </div>
+                <div id="fabCollapse9" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p class="ng-binding">A comprehensive introduction to Geometry Zen and Geometric Algebra (Coming soon).</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Examples-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse10">
+                    Examples
+                  </a>
+                </div>
+                <div id="fabCollapse10" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p class="ng-binding">Allow you to explore the capabilities and potential of Geometry Zen.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Works disconnected-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse11">
+                    Works disconnected
+                  </a>
+                </div>
+                <div id="fabCollapse11" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>No need to be connected to the internet unless you want to share your work with others.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- OAuth authentication-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse13">
+                    OAuth authentication
+                  </a>
+                </div>
+                <div id="fabCollapse13" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Secure authentication and authorization using GitHub. No extra passwords to memorize.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- GitHub repository-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse14">
+                    GitHub repository
+                  </a>
+                </div>
+                <div id="fabCollapse14" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p class="ng-binding">Save and share your models in public repositories or use private repositories for assignments and problems. Search for public Geometry Zen models by other authors, improve on them, return the favor by offering back your changes.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Issue Tracking-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse15">
+                    Issue Tracking
+                  </a>
+                </div>
+                <div id="fabCollapse15" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p class="ng-binding">Want something incorporated, fixed or improved? <a href="https://github.com/david-geo-holmes/geometry-zen/issues">Discuss your issue</a> with the Geometry Zen community!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 100% freedom-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse16">
+                    100% freedom
+                  </a>
+                </div>
+                <div id="fabCollapse16" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Freedom to run, copy, distribute, study, improve and change the software.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 100% free-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse17">
+                    100% free
+                  </a>
+                </div>
+                <div id="fabCollapse17" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>That's right.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Open Source Software-->
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#fabAccordion" data-target="#fabCollapse18">
+                    Open Source Software
+                  </a>
+                </div> <!-- accordion-toggle -->
+                <div id="fabCollapse18" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>What else would it be? Just head over to the <a href="https://github.com/david-geo-holmes/geometry-zen" class="ng-binding">Geometry Zen GitHub project.</a></p>
+                  </div> <!-- accordion-inner -->
+                </div> <!-- accordion-body -->
+              </div> <!-- accordion-group -->
+            </div> <!-- accordion -->
+          </div> <!-- widget-content-->
+        </div> <!-- widget -->
+      </div> <!-- span -->
+      <div class="span4">
+        <div class="widget">
+          <div class="widget-header">
+            <i class="icon-cogs"></i>
+            <h3>Geometric Algebra</h3>
+          </div>
+          <div class="widget-content">
+            <p>Geometric Algebra is the generalization of the concept of a number to describe geometric quantities and defines the rules for manipulating those numbers. In essence, Geometric Algebra is about learning how to correctly multiply and interpret Geometric Numbers.</p>
+            <p>Many of the Physical Laws that describe the phenomena of nature are Geometric and Algebraic in Character. That is to say, the laws have a precise mathematical structure that is amenable to a geometric interpretation. Geometric Algebra unifies these two aspects in a single mathematical tool. By learning and using Geometric Algebra (and Geometric Calculus) the student gains a new perspective and a lasting foundation for understanding the universe and making new discoveries.</p>
+          </div> <!-- div.widget-content -->
+        </div> <!-- div.widget -->
+      </div> <!-- div.span -->
+      <div class="span4">
+        <div class="widget">
+          <div class="widget-header">
+            <i class="icon-time"></i>
+            <h3>Timeline</h3>
+          </div>
+          <div class="widget-content">
+            <table class="table table-condensed">
+              <tbody>
+                <tr>
+                  <td><span nowrap="nowrap">300 BCE</span></td>
+                  <td>Euclid</td>
+                  <td><em>Geometry</em></td>
+                </tr>
+                <tr>
+                  <td><span nowrap="nowrap">250 CE</span></td>
+                  <td>Diophantes</td>
+                  <td><em>Algebra</em></td>
+                </tr>
+                <tr>
+                  <td>1545</td>
+                  <td>Cardano</td>
+                  <td><em>Imaginary numbers</em></td>
+                </tr>
+                <tr>
+                  <td>1637</td>
+                  <td>Descartes</td>
+                  <td><em>Coordinates</em></td>
+                </tr>
+                <tr>
+                  <td>1798</td>
+                  <td>Gauss</td>
+                  <td><em>Complex Algebra</em></td>
+                </tr>
+                <tr>
+                  <td>1840</td>
+                  <td>Grassman</td>
+                  <td><em>Linear Algebra, Vector Space</em></td>
+                </tr>
+                <tr>
+                  <td>1843</td>
+                  <td>Hamilton</td>
+                  <td><em>Quaternions</em></td>
+                </tr>
+                <tr>
+                  <td>1844</td>
+                  <td>Grassman</td>
+                  <td><em>Extensive Algebra</em></td>
+                </tr>
+                <tr>
+                  <td>1854</td>
+                  <td>Cayley</td>
+                  <td><em>Matrix Algebra</em></td>
+                </tr>
+                <tr>
+                  <td>1870</td>
+                  <td>Gibbs and Heaviside</td>
+                  <td><em>Vector Calculus</em></td>
+                </tr>
+                <tr>
+                  <td>1878</td>
+                  <td>Clifford</td>
+                  <td><em>Geometric Algebra</em></td>
+                </tr>
+                <tr>
+                  <td>1890</td>
+                  <td>Ricci</td>
+                  <td><em>Tensors</em></td>
+                </tr>
+                <tr>
+                  <td>1899</td>
+                  <td>Cartan</td>
+                  <td><em>Differential Forms</em></td>
+                </tr>
+                <tr>
+                  <td>1928</td>
+                  <td>Dirac</td>
+                  <td><em>Spin Algebra</em></td>
+                </tr>
+                <tr>
+                  <td>1957</td>
+                  <td>Riesz</td>
+                  <td><em>Clifford Numbers, Spinors</em></td>
+                </tr>
+                <tr>
+                  <td>1966</td>
+                  <td>Hestenes</td>
+                  <td><em>Space Time Algebra, Geometric Calculus</em></td>
+                </tr>
+              </tbody>
+            </table> <!-- table.table-->
+            <dl class="dl-horizontal">
+            </dl>
+          </div> <!-- dive.widget-content -->
+        </div> <!-- div.widget -->
+      </div> <!-- div.span4 -->
+    </div> <!-- div.row-fluid -->
+  </div> <!-- div.container-fluid -->
+</div> <!-- div.home-view -->
+<script class="ng-scope">
+  $('.accordion').on('show', function (e) {
+    $(e.target).prev('.accordion-heading').parent ().addClass('open');
+  });
+
+  $('.accordion').on('hide', function (e) {
+    $(this).find('.accordion-toggle').not($(e.target)).parents ('.accordion-group').removeClass('open');
+  });
+    
+  $('.accordion').each (function () {       
+    $(this).find ('.accordion-body.in').parent ().addClass ('open');
+  });
+</script>
+</div> <!-- div#view -->
+
+
+  <div class="extra">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <h4>About</h4>
+        <ul>
+          <li><a href="javascript:;">About Us</a></li>
+          <li><a href="javascript:;">Twitter</a></li>
+          <li><a href="javascript:;">Facebook</a></li>
+          <li><a href="javascript:;">Google+</a></li>
+        </ul>
+      </div>
+      <div class="span4">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="javascript:;">Frequently Asked Questions</a></li>
+          <li><a href="javascript:;">Ask a Question</a></li>
+          <li><a href="javascript:;">Video Tutorial</a></li>
+          <li><a href="javascript:;">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="span4">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="javascript:;">License</a></li>
+          <li><a href="javascript:;">Terms of Use</a></li>
+          <li><a href="javascript:;">Privacy Policy</a></li>
+          <li><a href="javascript:;">Security</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id="footer-contributors" class="span6">
+        <p>By <a href="http://github.com/david-geo-holmes">David Geo Holmes</a>, and many more <a href="https://github.com/david-geo-holmes/geometry-zen/graphs/contributors">awesome&nbsp;contributors</a>.</p>
+      </div> <!-- div.span -->
+      <div id="footer-terms" class="span6">
+        <!--
+        <p>
+          Proudly hosted by
+          <a href="https://github.com">
+            <img src="/img/footer-logo.png" alt="GitHub • Social coding">
+          </a>
+        </p>
+      -->
+      </div> <!-- div.span -->
+    </div>
+    <div class="row-fluid">
+      <div id="footer-copyright" class="span6">© 2013 David Holmes</div>
+      <div id="footer-terms" class="span6">Dedicated to Geo</div>
+    </div> <!-- div.row -->
+  </div> <!-- div.container -->
+</footer>
+
+
+</body>
+</html>
