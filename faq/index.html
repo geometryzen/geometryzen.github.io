@@ -18,9 +18,15 @@ $(function () {
       <div class="subnav-collapse collapse">
         <ul class="mainnav">
           <li class="">
-            <a href="http://geometryzen.github.io">
-              <i class="icon-home"></i>
-              <span>Home</span>
+            <a href="http://geometryzen.github.io" style="text-decoration: none">
+              <i class="icon-book"></i>
+              <span>Manual</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="javascript:void(0);" style="text-decoration: none">
+              <i class="icon-question-sign"></i>
+              <span>FAQ</span>
             </a>
           </li>
         </ul>
@@ -35,13 +41,21 @@ $(function () {
       <div class="span8">
         <div class="widget stacked">
           <div class="widget-header">
-            <i class="icon-pushpin"></i>
+            <i class="icon-question-sign"></i>
             <h3>Frequently Asked Questions</h3>
           </div>
           <div class="widget-content">
             <h3>Search</h3>
             <br />
             <ol class="faq-list">
+              <li>
+                <h4>Why can't I see the WebGL 3D visualizations?</h4>
+                <p>You probably aren't using a web browser that supports <a href="http://en.wikipedia.org/wiki/WebGL">WebGL</a> (Web Graphics Library).</p>
+                <p>To check if your browser supports WebGL, go to the <a href="http://get.webgl.org">&quot;Your browser supports WebGL&quot;</a> page. This resource will also guide you to the support site for your browser.</p>
+                <p><em>Windows PC Users:</em> WebGL does not run in older versions of Microsoft Internet Explorer. Microsoft has confirmed that it will be supporting WebGL for IE11 in Windows 8.1. For now, you should use <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.mozilla.org">Mozilla Firefox</a>, or <a href="http://www.opera.com/developer/next">Opera Next</a> as your web browser.</p>
+                <p><em>Mac PC Users:</em> Safari does support WebGL, but it must be configured to do so. <a href="https://discussions.apple.com/thread/3300585?start=0&amp;tstart=0">How do I enable WebGL in Safari?</a></p>
+                <p><em>Mobile Users:</em> WebGL may not be supported on your mobile device.</p>
+              </li>
               <li>
                 <h4>Can I import a Python module that is not baked into the Geometry Zen software?</h4>
                 <p>There are plans to be able to include a module by specifying the resource URL.</p> 
