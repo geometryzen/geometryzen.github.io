@@ -12,17 +12,49 @@ title: Geometric Numbers
             <h3>{{ page.title }}</h3>
         </div>
         <div class="widget-content">
+          <p>This is a test of the LATEX integration!</p>
+          <p>Maxwell's Equations (Geometric Form)</p>
+          <p>$\nabla \rfloor E = \Large\frac{\rho}{\epsilon_{0}}$</p>
+          <p>$\nabla \wedge B = 0$</p>
+          <p>$\nabla \wedge E = \Large\frac{\partial B}{\partial t}$</p>
+          <p>$\nabla \rfloor B = \mu_{0} J + \Large\frac{\partial E}{\partial t}$</p>
         </div>
       </div>
-
+      <div class="text-center">
+        <iframe class="youtube-player" type="text/html" width="480" height="360"
+                src="http://www.youtube.com/embed/vRIEyxENcn0" frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="row">
+      <div class="widget">
+        <div class="widget-header">
+            <i class="icon-cogs"></i>
+            <h3>Vectors</h3>
+            <button type="button" class="btn-primary" onclick="runit('01')">Run</button>
+        </div>
+        <div class="widget-plain">
 <textarea id="code-01" cols="40" rows="10" >
 from e3ga import *
-A = Vector3(5, 3, 4)
-print "A => " + str(A)
-</textarea>
-<button type="button" class="btn-primary" onclick="runit('01')">Run</button>
-<pre id="output-01"></pre>
 
+A = Vector3(5, 3, 4)
+
+print "str(A) => " + str(A)
+print "repr(A) => " + repr(A)
+</textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="widget">
+        <div class="widget-header">
+            <i class="icon-print"></i>
+            <h3>Printer</h3>
+        </div>
+        <div class="widget-content">
+          <pre id="output-01"></pre>
+        </div>
+      </div>
     </div>
   </div>
 </div>
