@@ -1,6 +1,6 @@
 {
   "name": "davinci-blade",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "TypeScript Geometric Physics library.",
   "author": {
     "name": "David Holmes",
@@ -30,15 +30,15 @@
   },
   "ignore": [
     ".settings",
-    "node_modules",
-    "amd",
-    "cjs",
-    "manual",
-    "reports",
-    "src",
-    "test",
-    "typings",
-    "vendor",
+    "/node_modules",
+    "/amd",
+    "/cjs",
+    "/manual",
+    "/reports",
+    "/src",
+    "/test",
+    "/typings",
+    "/vendor",
     ".bowerrc",
     ".c9revisions",
     ".gitignore",
@@ -58,14 +58,13 @@
     "tsd.json"
   ],
   "homepage": "https://github.com/geometryzen/davinci-blade",
-  "_release": "0.9.2",
+  "_release": "0.9.3",
   "_resolution": {
     "type": "version",
-    "tag": "0.9.2",
-    "commit": "64290ddb68c6f0a15a53103c5015f72d18fe5f3b"
+    "tag": "0.9.3",
+    "commit": "c5365bf74f86627980ea7b9515b8dab94d813b49"
   },
   "_source": "git://github.com/geometryzen/davinci-blade.git",
-  "_target": "~0.9.2",
-  "_originalSource": "davinci-blade",
-  "_direct": true
+  "_target": "0.9.3",
+  "_originalSource": "davinci-blade"
 }
